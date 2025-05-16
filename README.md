@@ -91,7 +91,7 @@ The chatbot is designed to answer technical queries by:
     The notebook `a.ipynb` currently has a placeholder API key. **You MUST replace this.**
     Open `a.ipynb` and find the line:
     ```python
-    os.environ["SERPAPI_API_KEY"] = "7ffdbf28402b8d9ea42603fe9c84e6cb7e963a17ba330bcc120abc8f219b6548"
+    os.environ["SERPAPI_API_KEY"] = "YOUR_ACTUAL_SERPAPI_API_KEY"
     ```
     Replace the placeholder key with your actual SerpAPI key:
     ```python
