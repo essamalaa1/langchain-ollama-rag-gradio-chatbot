@@ -97,19 +97,7 @@ The `config.py` file contains:
 - `SIMILARITY_THRESHOLD`: Float value (e.g., `0.6`) for deciding fallback.
 - `MAX_ITERATIONS`: Max steps for the LangChain agent.
 
-.
-├── app.py                          # Main Streamlit app
-├── agent_builder.py                # LangChain agent setup
-├── config.py                       # Config file
-├── llm_services.py                 # LLM and embedding initialization
-├── scraper.py                      # Scraping utility
-├── tool_definitions.py             # RAG, search, and Python tools
-├── vector_store_manager.py         # ChromaDB setup and loading
-├── calculate_similarity_threshold.py
-├── scraped_langchain_docs/         # Cached scraped docs
-├── langchain_chroma_db_persistent/ # Vector store directory
-├── requirements.txt
-└── README.md
+
 ## How It Works
 
 1. **User Input:** Query entered in Streamlit UI.
