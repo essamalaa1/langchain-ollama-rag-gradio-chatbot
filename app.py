@@ -1,13 +1,8 @@
-# app.py
 import streamlit as st
-from langchain.memory import ConversationBufferMemory # Correct import for memory
-
-import config # Your local config file
+from langchain.memory import ConversationBufferMemory
+import config 
 from llm_services import get_llm, get_embeddings
 from vector_store_manager import load_or_build_vector_store
-# TODO: Address LangChainDeprecationWarning for Chroma in vector_store_manager.py
-# 1. pip install -U langchain-chroma
-# 2. Update import: from langchain_community.vectorstores import Chroma -> from langchain_chroma import Chroma (or similar)
 from tool_definitions import get_tools
 from agent_builder import create_agent_executor
 import os
@@ -16,7 +11,6 @@ import os
 st.set_page_config(page_title="LangChain RAG Chatbot", layout="wide")
 
 # --- Environment Variables ---
-# Ensure SERPAPI_API_KEY is set. It's good practice to check and inform the user.
 if config.SERPAPI_API_KEY:
     os.environ["SERPAPI_API_KEY"] = config.SERPAPI_API_KEY
 else:

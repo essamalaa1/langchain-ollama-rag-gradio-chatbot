@@ -2,7 +2,7 @@
 SERPAPI_API_KEY = "7ffdbf28402b8d9ea42603fe9c84e6cb7e963a17ba330bcc120abc8f219b6548"
 
 # --- Models ---
-LLM_MODEL = "llama3:latest"
+LLM_MODEL = "gemma3:12b"
 EMBEDDING_MODEL = "nomic-embed-text"
 
 # --- Document URLs ---
